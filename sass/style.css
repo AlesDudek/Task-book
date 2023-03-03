@@ -32,13 +32,14 @@ main section .section__one {
   margin-top: 40px;
 }
 main section .section__one input {
-  width: 420px;
+  width: 100%;
   height: 50px;
   border-radius: 8px;
   background: #b5b1b1;
   border: #b5b1b1;
   padding: 17px 20px;
   margin-right: 20px;
+  font-family: "Poppins", sans-serif;
 }
 main section .section__one button {
   width: 110px;
@@ -69,18 +70,12 @@ main section .section__lable {
 }
 main .counter {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 36px;
 }
 main .counter .task-counter {
   display: none;
-  margin-right: 135px;
-}
-main .counter .clear-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 main .counter .clear-button .clear-button-bg {
   display: none;
@@ -91,7 +86,37 @@ main .counter .clear-button .clear-button-bg {
   border-radius: 8px;
   color: #F5F5F5;
   font-weight: 600;
+  margin-left: auto;
 }
 main .counter .clear-button .clear-button-bg:hover {
   background: #1D84E4;
+  cursor: pointer;
+}
+main .newSpan {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #b5b1b1;
+  border-radius: 8px 0 0 8px;
+}
+main .newDiv {
+  display: flex;
+  margin-top: 10px;
+}
+main .newBtn {
+  width: 66px;
+  height: 50px;
+  background: #E75D5D;
+  border-radius: 0 8px 8px 0;
+}
+main .newBtn:hover {
+  background: #D84F4F;
+  cursor: pointer;
+}
+main .newImg {
+  width: 25px;
+  height: 25px;
 }/*# sourceMappingURL=style.css.map */

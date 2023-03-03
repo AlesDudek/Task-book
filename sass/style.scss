@@ -14,11 +14,7 @@ body{
   background: $bg;
 }
 main{
-  // display: flex;
-  // flex-direction: column;
-  // text-align: center;
-  // justify-content: center;
-  // align-items: center;
+
   width: 550px;
   margin: 0 auto;
   header{
@@ -36,13 +32,14 @@ main{
       display: flex;
       margin-top: 40px;
       input{
-        width: 420px;
+        width: 100%;
         height: 50px;
         border-radius: 8px;
         background: $grey;
         border:  $grey;
         padding: 17px 20px;
         margin-right: 20px;
+        font-family: 'Poppins', sans-serif;
       }
       button{
         width: 110px;
@@ -72,17 +69,13 @@ main{
   }
   .counter{
     display: flex;
-    text-align: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 36px;
     .task-counter{
       display: none;
-      margin-right: 135px;
     }
     .clear-button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
       .clear-button-bg{
         display: none;
         width: 200px;
@@ -92,10 +85,43 @@ main{
         border-radius: 8px;
         color: $bg;
         font-weight: 600;
+        margin-left: auto;
       }
       .clear-button-bg:hover{
         background: $bgBtnHvr;
+        cursor: pointer;
       }
     }
   }
+  // nastavení vytvořených tagu
+  .newSpan{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: $grey;
+    border-radius: 8px 0 0 8px;
+  }
+  .newDiv{
+    display: flex;
+    margin-top: 10px;
+  }
+  .newBtn{
+    width: 66px;
+    height: 50px;
+    background: $warning;
+    border-radius: 0 8px 8px 0;
+  }
+  .newBtn:hover{
+    background: $warHover;
+    cursor: pointer;
+  }
+  .newImg{
+    width: 25px;
+    height: 25px;
+
+  }
+  
 }

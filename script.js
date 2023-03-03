@@ -37,28 +37,20 @@ addButton.addEventListener('click', function(e) {
 
   // Nastavíme text úkolu
   taskText.innerText = inputField.value;
-  taskText.style.width = "484px";
-  taskText.style.height = "50px";
-  taskText.style.textAlign = "center";
-  taskText.style.display = "flex";
-  taskText.style.justifyContent = "center";
-  taskText.style.alignItems = "center";
-  taskText.style.background = "#b5b1b1";
   newTask.appendChild(taskText);
-  newTask.style.display = "flex";
-  newTask.style.marginTop = "10px";
-  taskText.style.borderRadius = "8px 0 0 8px"
-  clearButton.style.display = "block"
-  
-  
+  clearButton.style.display = "block";
+  counter.style.display = "block";
+
+  // Přidání class k vytvořeným div, span....
+  taskText.classList = "newSpan";
+  newTask.classList = "newDiv";
+  deleteButton.classList = "newBtn";
+  deleteIcon.classList = "newImg";
+
   // Nastavíme ikonu pro smazání úkolu
   deleteIcon.src = './img/trash.svg';
-  deleteIcon.style.background = "#E75D5D";
-  deleteIcon.style.width = "66px";
-  deleteIcon.style.height = "50px";
   deleteIcon.style.border = "none";
-  deleteIcon.style.padding = "10px";
-  deleteIcon.style.borderRadius = "0 8px 8px 0";
+  //deleteIcon.style.padding = "10px";
   
   deleteButton.appendChild(deleteIcon);
   newTask.appendChild(deleteButton);
