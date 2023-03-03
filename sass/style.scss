@@ -14,12 +14,19 @@ body{
   background: $bg;
 }
 main{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // text-align: center;
+  // justify-content: center;
+  // align-items: center;
+  width: 550px;
+  margin: 0 auto;
   header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 192px;
     font-size: 48px;
     font-weight: bold;
@@ -44,6 +51,13 @@ main{
         border-radius: 8px;
         border: none;
       }
+      button:hover{
+        background: $bgBtnHvr;
+        cursor: pointer;
+      }
+    }
+    ::placeholder{
+      font-family: 'Poppins', sans-serif;
     }
     .section__lable{
       display: flex;
@@ -55,6 +69,33 @@ main{
       width: 550px;
       height: 100px;
     }
-    
+  }
+  .counter{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 36px;
+    .task-counter{
+      display: none;
+      margin-right: 135px;
+    }
+    .clear-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .clear-button-bg{
+        display: none;
+        width: 200px;
+        height: 40px;
+        background: $bgBtn;
+        border: none;
+        border-radius: 8px;
+        color: $bg;
+        font-weight: 600;
+      }
+      .clear-button-bg:hover{
+        background: $bgBtnHvr;
+      }
+    }
   }
 }

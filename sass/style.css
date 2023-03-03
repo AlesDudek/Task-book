@@ -14,13 +14,15 @@ body {
 }
 
 main {
+  width: 550px;
+  margin: 0 auto;
+}
+main header {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-}
-main header {
   margin-top: 192px;
   font-size: 48px;
   font-weight: bold;
@@ -33,8 +35,8 @@ main section .section__one input {
   width: 420px;
   height: 50px;
   border-radius: 8px;
-  background: #F2F2F2;
-  border: #F2F2F2;
+  background: #b5b1b1;
+  border: #b5b1b1;
   padding: 17px 20px;
   margin-right: 20px;
 }
@@ -45,13 +47,51 @@ main section .section__one button {
   border-radius: 8px;
   border: none;
 }
+main section .section__one button:hover {
+  background: #1D84E4;
+  cursor: pointer;
+}
+main section ::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+main section ::placeholder {
+  font-family: "Poppins", sans-serif;
+}
 main section .section__lable {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  background: #F2F2F2;
+  background: #b5b1b1;
   border-radius: 8px;
   width: 550px;
   height: 100px;
+}
+main .counter {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 36px;
+}
+main .counter .task-counter {
+  display: none;
+  margin-right: 135px;
+}
+main .counter .clear-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .counter .clear-button .clear-button-bg {
+  display: none;
+  width: 200px;
+  height: 40px;
+  background: #2997FF;
+  border: none;
+  border-radius: 8px;
+  color: #F5F5F5;
+  font-weight: 600;
+}
+main .counter .clear-button .clear-button-bg:hover {
+  background: #1D84E4;
 }/*# sourceMappingURL=style.css.map */

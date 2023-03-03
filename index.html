@@ -24,17 +24,22 @@
 
         </div>
       </div>
-      <div class="section__lable">
-        <label for="js-input-Field">
+      <div class="section__lable " id="js-section-lable">
+        <label for="js-input-Field" class="js-inp">
           <span id="js-display-text">Momentálně v úkolníčku, žádný úkol nemáte.</span>
         </label>
       </div>
       <div id="js-tasks-list"></div>
     </section>
+    <section class="counter">
+      <div id="js-task-count" class="task-counter">
+        Máte 0 nedokončené úkoly
+      </div>
+      <div class="clear-button">
+        <button id="js-clear-button" class="clear-button-bg">Vymazat vše</button>
+      </div>
+    </section>
 </main>
-
-
-
   <script src="./script.js"></script>
 </body>
 </html>
