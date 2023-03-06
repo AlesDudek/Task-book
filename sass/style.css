@@ -6,7 +6,6 @@
 }
 
 body {
-  width: 1440px;
   height: 100vh;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
@@ -35,8 +34,7 @@ main section .section__one input {
   width: 100%;
   height: 50px;
   border-radius: 8px;
-  background: #b5b1b1;
-  border: #b5b1b1;
+  border: 1px solid #E4E4E4;
   padding: 17px 20px;
   margin-right: 20px;
   font-family: "Poppins", sans-serif;
@@ -51,6 +49,7 @@ main section .section__one button {
 main section .section__one button:hover {
   background: #1D84E4;
   cursor: pointer;
+  transition: 0.2s all ease-in-out;
 }
 main section ::-moz-placeholder {
   font-family: "Poppins", sans-serif;
@@ -63,7 +62,7 @@ main section .section__lable {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  background: #b5b1b1;
+  background: #F2F2F2;
   border-radius: 8px;
   width: 550px;
   height: 100px;
@@ -77,6 +76,9 @@ main .counter {
 main .counter .task-counter {
   display: none;
 }
+main .counter .task-counter .count {
+  font-weight: bold;
+}
 main .counter .clear-button .clear-button-bg {
   display: none;
   width: 200px;
@@ -87,20 +89,21 @@ main .counter .clear-button .clear-button-bg {
   color: #F5F5F5;
   font-weight: 600;
   margin-left: auto;
+  font-family: "Poppins", sans-serif;
 }
 main .counter .clear-button .clear-button-bg:hover {
   background: #1D84E4;
   cursor: pointer;
+  transition: 0.2s all ease-in-out;
 }
 main .newSpan {
   display: flex;
-  text-align: center;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 50px;
-  background: #b5b1b1;
+  background: #F2F2F2;
   border-radius: 8px 0 0 8px;
+  padding-left: 20px;
 }
 main .newDiv {
   display: flex;
@@ -115,8 +118,57 @@ main .newBtn {
 main .newBtn:hover {
   background: #D84F4F;
   cursor: pointer;
+  transition: 0.2s all ease-in-out;
 }
 main .newImg {
   width: 25px;
   height: 25px;
+}
+main .newCount {
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  body {
+    width: 288px;
+  }
+  main {
+    width: 288px;
+    margin: 0 auto;
+  }
+  main header h1 {
+    font-size: 36px;
+  }
+  main section {
+    width: 288px;
+  }
+  main section .newSpan {
+    height: 74px;
+  }
+  main section .newBtn {
+    height: 74px;
+  }
+  main section .section__one {
+    display: flex;
+    flex-direction: column;
+  }
+  main section .section__one .add-Botton {
+    width: 100%;
+    margin-top: 12px;
+  }
+  main section .section__lable {
+    width: 100%;
+  }
+  main section .section__lable .js-inp {
+    text-align: center;
+    padding: 10px;
+  }
+  main .counter {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .counter .clear-button .clear-button-bg {
+    width: 288px;
+    font-family: "Poppins", sans-serif;
+  }
 }/*# sourceMappingURL=style.css.map */

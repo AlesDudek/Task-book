@@ -19,7 +19,7 @@ const tasksList = document.getElementById('js-tasks-list');
 const clearButton = document.getElementById('js-clear-button');
 const taskCountElement = document.getElementById('js-task-count');
 const lableInputText = document.getElementById('js-section-lable');
-const counter = document.querySelector(".counter")
+const counter = document.querySelector(".counter");
 
 let count = 0;
 
@@ -31,7 +31,6 @@ addButton.addEventListener('click', function(e) {
   const deleteButton = document.createElement("button");
   const deleteIcon = document.createElement("img");
   
-
   lableInputText.style.display = "none";
   taskCountElement.style.display = "block";
 
@@ -46,11 +45,9 @@ addButton.addEventListener('click', function(e) {
   newTask.classList = "newDiv";
   deleteButton.classList = "newBtn";
   deleteIcon.classList = "newImg";
-
   // Nastavíme ikonu pro smazání úkolu
   deleteIcon.src = './img/trash.svg';
   deleteIcon.style.border = "none";
-  //deleteIcon.style.padding = "10px";
   
   deleteButton.appendChild(deleteIcon);
   newTask.appendChild(deleteButton);
@@ -60,7 +57,9 @@ addButton.addEventListener('click', function(e) {
   tasksList.appendChild(newTask);
   count++;
   taskCountElement.innerHTML = "Máte " + count + " nedokončené úkoly";
-  
+  counter.style.display = "flex";
+
+  //counter.classList = "newCounter"
   // Aktualizujeme text na obrazovce
   displayText.innerText = "Seznam úkolů:";
   // Vyčistíme pole pro vstup
@@ -80,7 +79,7 @@ addButton.addEventListener('click', function(e) {
       lableInputText.style.justifyContent = "center";
       lableInputText.style.alignItems = "center";
       lableInputText.style.textAlign = "center";
-
+      console.log(lableInputText);
       
     }
     if(taskCountElement.length = 0){

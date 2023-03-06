@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 body{
-  width: 1440px;
   height: 100vh;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
@@ -35,8 +34,8 @@ main{
         width: 100%;
         height: 50px;
         border-radius: 8px;
-        background: $grey;
-        border:  $grey;
+        //background: #E4E4E4;
+        border: 1px solid #E4E4E4 ;
         padding: 17px 20px;
         margin-right: 20px;
         font-family: 'Poppins', sans-serif;
@@ -51,6 +50,7 @@ main{
       button:hover{
         background: $bgBtnHvr;
         cursor: pointer;
+        transition: .2s all ease-in-out;
       }
     }
     ::placeholder{
@@ -74,6 +74,10 @@ main{
     margin-top: 36px;
     .task-counter{
       display: none;
+      .count{
+        font-weight: bold;
+      }
+      
     }
     .clear-button{
       .clear-button-bg{
@@ -86,23 +90,24 @@ main{
         color: $bg;
         font-weight: 600;
         margin-left: auto;
+        font-family: 'Poppins', sans-serif;
       }
       .clear-button-bg:hover{
         background: $bgBtnHvr;
         cursor: pointer;
+        transition: .2s all ease-in-out;
       }
     }
   }
   // nastavení vytvořených tagu
   .newSpan{
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 50px;
     background: $grey;
     border-radius: 8px 0 0 8px;
+    padding-left: 20px;
   }
   .newDiv{
     display: flex;
@@ -117,11 +122,65 @@ main{
   .newBtn:hover{
     background: $warHover;
     cursor: pointer;
+    transition: .2s all ease-in-out;
   }
   .newImg{
     width: 25px;
     height: 25px;
+  }
+  .newCount{
+    font-weight: bold;
+  }
+  
+}
+@media (max-width:650px) {
+  body{
+    width: 288px;
+  }
+  main{
+    width: 288px;
+    margin: 0 auto;
+    header{
+    h1{
+      font-size: 36px;
+    }
+  }
+  section{
+    .newSpan{
+      height: 74px;
+    }
+    .newBtn{
+      height: 74px;
+    }
+    width: 288px;
+    .section__one{
+        display: flex;
+        flex-direction: column;
+        .add-Botton{
+          width: 100%;
+          margin-top: 12px;
+        }
+      }
+      .section__lable{
+        width: 100%;
+        .js-inp{
+          text-align: center;
+          padding: 10px;
+        }
+      }
+    }
+    .counter{
+      flex-direction: column;
+      width: 100%;
+      
+      .clear-button{
+        .clear-button-bg{
+          width: 288px;
+          font-family: 'Poppins', sans-serif;
+        }
 
+      }
+    }
   }
   
 }
