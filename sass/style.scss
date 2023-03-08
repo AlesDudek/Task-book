@@ -57,7 +57,7 @@ main{
     ::placeholder{
       font-family: 'Poppins', sans-serif;
     }
-    .section__lable{
+    .section__label{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -85,7 +85,7 @@ main{
       
     }
     .clear-button{
-      .clear-button-bg{
+      &-bg{
         display: none;
         width: 200px;
         height: 40px;
@@ -97,7 +97,7 @@ main{
         margin-left: auto;
         font-family: 'Poppins', sans-serif;
       }
-      .clear-button-bg:hover{
+      &-bg:hover{
         background: $bgBtnHvr;
         cursor: pointer;
         transition: .2s all ease-in-out;

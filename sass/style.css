@@ -59,7 +59,7 @@ main section ::-moz-placeholder {
 main section ::placeholder {
   font-family: "Poppins", sans-serif;
 }
-main section .section__lable {
+main section .section__label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@ main section .section__lable {
   width: 100%;
   height: 100px;
 }
-main section .section__lable span {
+main section .section__label span {
   color: #262626;
   opacity: 0.6;
 }
@@ -85,7 +85,7 @@ main .counter .task-counter {
 main .counter .task-counter .count {
   font-weight: bold;
 }
-main .counter .clear-button .clear-button-bg {
+main .counter .clear-button-bg {
   display: none;
   width: 200px;
   height: 40px;
@@ -97,7 +97,7 @@ main .counter .clear-button .clear-button-bg {
   margin-left: auto;
   font-family: "Poppins", sans-serif;
 }
-main .counter .clear-button .clear-button-bg:hover {
+main .counter .clear-button-bg:hover {
   background: #1D84E4;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
